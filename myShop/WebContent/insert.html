@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <title>상품 등록</title>
+          <link type="text/css" rel="stylesheet" href="myShop.css">
+        
+    </head>
+    
+    <script type="text/javascript">
+    function check() {//-----------------------------------------유효성검사
+ 	   var id = document.getElementById("id").value;
+ 	   var title = document.getElementById("title").value;
+ 	   var content = document.getElementById("content").value;
+ 	   var price = document.getElementById("price").value;
+ 	   
+ 	   if(id == "") {
+ 	      alert("아이디 미입력")
+ 	   } else if(title == "") {
+ 	      alert("상품이름 미입력")
+ 	   } else if(content == "") {
+ 	      alert("상품내용 미입력")
+ 	   } else if(price == "") {
+ 	      alert("상품가격 미입력")
+ 	   } else {
+ 	      location.href = "insert.jsp?id=" + id + "&title=" + title + "&content=" + content + "&price=" + price;
+ 	   }
+ 	   
+ 	}
+    </script>
+    
+    <!--상품 등록란  -->
+    <body>
+    <center>
+    	<font color = "black" size="6">상품 등록</font>
+    	<hr>
+        <form action= "insert.jsp">
+        <table border="1">
+        	<tr align="center">
+        	 		<td bgcolor="red" width="100">항&nbsp;&nbsp;&nbsp;목</td> 
+                    <td bgcolor="orange" width="300">입&nbsp;&nbsp;&nbsp;력</td>
+                </tr>
+            <tr align="center">
+            	<td bgcolor= "gray" width="100">아이디</td>
+            	<td bgcolor= "black" width="300">
+                     <input type="text" id = "id">
+                </td></tr>     
+            <tr align="center">
+            	<td bgcolor= "gray" width="100">상품제목</td>
+            	<td bgcolor= "black" width="300">
+                     <input type="text" id = "title">
+                </td></tr>     
+            <tr align="center">
+            	<td bgcolor= "gray" width="100">상품설명</td>
+            	<td bgcolor= "black" width="300">
+                     <input type="text" id = "content">
+                </td></tr>      
+            <tr align="center">
+            	<td bgcolor= "gray" width="100">가격</td>
+            	<td bgcolor= "black" width="300">
+                     <input type="text" id = "price">
+                </td></tr>      
+         	</table>
+            <button type="button" onclick="check()">등록</button>
+          
+        </form>
+        <hr>
+        <div id ="span1">
+        	<a href="delete.html">상품 삭제</a>
+       		<a href="select.html">상품 검색</a>
+       	 	<a href="selectAll.jsp">상품 전체 검색</a>
+        	<a href="update.html">상품 수정</a>
+        </div>
+        </center>
+    </body>
+    </html>

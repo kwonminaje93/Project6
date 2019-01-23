@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <title>상품 등록</title>
+    </head>
+    <!-- 상품 정보 수정 -->
+    <body bgcolor = "yellow">
+    <center>
+    	<font color = "black" size="6">상품 정보 수정</font>
+    	<hr>
+        <form action= "update.jsp">
+        <table border="1">
+        	<tr align="center">
+        	 		<td bgcolor="red" width="100">항&nbsp;&nbsp;&nbsp;목</td> 
+                    <td bgcolor="orange" width="300">입&nbsp;&nbsp;&nbsp;력</td>
+                </tr>
+            <tr align="center">
+            	<td bgcolor= "gray" width="100" >아이디</td>
+            	<td bgcolor= "black" width="300">
+                     <input type="text" name = "id">
+                </td>     
+            <tr align="center">
+            	<td bgcolor= "gray" width="100">상품제목</td>
+            	<td bgcolor= "black" width="300">
+                     <input type="text" name = "title">
+                </td>     
+            <tr align="center">
+            	<td bgcolor= "gray" width="100">상품설명</td>
+            	<td bgcolor= "black" width="300">
+                     <input type="text" name = "content">
+                </td>     
+            <tr align="center">
+            	<td bgcolor= "gray" width="100">가격</td>
+            	<td bgcolor= "black" width="300">
+                     <input type="text" name = "price">
+                </td>     
+         </table>
+            <input type="submit" value="수정">
+          
+        </form>
+        <hr>
+        <a href="update.html">상품 등록</a>
+        <a href="select.html">상품 검색</a>
+        <a href="selectAll.jsp">상품 전체 검색</a>
+        <a href="delete.html">상품 삭제</a>
+        </center>
+    </body>
+    </html>
